@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="panier.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement</title>
+</head>
+<body>
+    <div class="container">
+
+
+        <header>
+            <div class="head-1">
+            <div class="M">
+       <li id="logos"><span style="color: orange;">M</span>obilux<span style="color: orange;">.</li>
+        </div>
+
+<nav>
+    <ul>
+        <li><a href="Mobilux.html"  id="lien">Accueil</a></li>
+        <li><a href="Stocks.html"  id="lien">Stocks</a></li>
+       
+        <div class="Achat">
+            <i class="fa-solid fa-bag-shopping" id="i2"></i>
+             <li><a href="Achat.html"  id="lien">Achat</a></li>   
+        </div>
+        <li><a href="Propos.html"  id="lien">A propos</a></li>
+            <i class="fa-regular fa-circle-user" id="i3"></i>
+            <li><a href="Inscription.html" id="A1">Connection/Inscription</a></li>     
+    </ul>
+</nav>
+</div><br><br>
+
+        <header>
+            <h1>Paiement</h1>
+        </header>
+
+        <form id="form-paiement" style="background-color: white; border: 1px solid white; border-radius: 8px; width: 350px; text-align: center; margin-left: 350px; padding: 18px;">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div><br>
+            <div class="form-group">
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse" required>
+            </div><br>
+            <div class="form-group">
+                <label for="carte">Numéro de carte :</label>
+                <input type="text" id="carte" name="carte" required>
+            </div><br>
+            <div class="form-group">
+                <label for="expiration">Date d'expiration :</label>
+                <input type="month" id="expiration" name="expiration" required>
+            </div><br>
+            <div class="form-group">
+                <label for="cvv">CVV :</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div><br>
+
+            <button type="submit">Payer</button>
+        </form>
+
+        <footer>
+            <div>
+                <h3>Total: <span id="total-paiement">0,00$</span></h3>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Fonction pour afficher le total du panier sur la page de paiement
+        function afficherTotalPaiement() {
+            let panier = JSON.parse(localStorage.getItem('panier')) || [];
+            let total = 0;
+
+            panier.forEach((produit) => {
+                total += produit.prix * produit.quantite;
+            });
+
+            document.getElementById('total-paiement').textContent = total.toFixed(2) + ' $';
+        }
+
+        // Initialiser la page de paiement
+        afficherTotalPaiement();
+
+        // Soumission du formulaire de paiement (simulation)
+        document.getElementById('form-paiement').addEventListener('submit', function(e) {
+            e.preventDefault(); // Empêcher la soumission du formulaire par défaut
+            alert('Paiement effectué avec succès !');
+            localStorage.removeItem('panier'); // Vider le panier après paiement
+            window.location.href = 'confirmation.html'; // Rediriger vers une page de confirmation ou autre page
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+   width: 100%;
+   background-color: black;
+}
+
+header
+{
+    background: url(Images/IMG-20241025-WA0390.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+#logos
+{
+    font-size: 25px;
+}
+.head-1
+{
+    display: flex;
+    justify-content: space-around;
+}
+.M
+{
+    color: white;
+    list-style: none;
+    margin: 20px;
+}
+nav ul 
+{
+    display: flex;
+    list-style: none;
+ 
+}
+nav ul li
+{
+    margin: 20px;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#A1
+{
+    border: 8px solid rgb(15, 162, 173);
+    background-color:   rgb(15, 162, 173);
+    border-radius: 30px;
+}
+#A1:hover
+{
+    border: 8px solid orange;
+    background-color: orange;
+    border-radius: 30px;
+}
+#i2
+{
+    position: absolute;
+    margin-top: 20px;
+    color: white;
+}
+#i3
+{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 350px;
+    color: white;
+}
+#lien:hover
+{
+    color: orange;
+    border-bottom: 1px solid orange;
+    padding-bottom: 8px;
+}
+.propos h1
+{ 
+    border: 8px solid rgb(7, 143, 148);
+    background-color: rgb(7, 143, 148);
+    border-radius: 8px;
+    width: 550px;
+    margin-left: 400px;
+   text-align: center;
+   color: white;
+}
+.propos h2
+{
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+.group1
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+}
+.excellente
+{
+    border: 1px solid rgb(253, 253, 253);
+    background-color: rgb(253, 253, 253);
+    padding: 40px;
+    border-radius: 8px;
+}
+.gestion
+{
+    border: 1px solid rgb(253, 253, 253);
+    background-color: rgb(253, 253, 253);
+    padding: 40px;
+    border-radius: 8px;
+}
+.commodité
+{
+    border: 1px solid rgb(253, 253, 253);
+    background-color: rgb(253, 253, 253);
+    padding: 40px;
+    border-radius: 8px;
+}
+.group2
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+}
+.liste
+{
+    border: 1px solid rgb(253, 253, 253);
+    background-color: rgb(253, 253, 253);
+    padding: 40px;
+    border-radius: 8px;
+}
+.commerce
+{
+    border: 1px solid rgb(253, 253, 253);
+    background-color: rgb(253, 253, 253);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.bigfooter
+{
+    border: 1px solid rgb(8, 61, 48);
+    background-color: rgb(8, 61, 48);
+    padding: 20px;
+    color: white;
+}
+.bigfooter1
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.bigfooter2
+{
+      margin-left: 750px;
+      margin-top: 30px;
+}
+.copyright
+{
+    border: 1px solid #061d17;
+    background-color: #061d17;
+    text-align: center;
+    list-style: none;
+    padding: 20px;
+    color: white;
+}
+#i1
+{ 
+    margin-left: 7px;
+    color: black;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 50px;
+    padding: 10px;
+}

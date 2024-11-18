@@ -1,0 +1,495 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+   width: 100%;
+   background-color: black;
+}
+
+header
+{
+    background: url(rectangle28.svg), url(Images/IMG-20241025-WA0381.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+#logos
+{
+    font-size: 25px;
+}
+.head-1
+{
+    display: flex;
+    justify-content: space-around;
+}
+.M
+{
+    color: white;
+    list-style: none;
+    margin: 20px;
+}
+nav ul 
+{
+    display: flex;
+    list-style: none;
+ 
+}
+nav ul li
+{
+    margin: 20px;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+#A1
+{
+    border: 8px solid rgb(15, 162, 173);
+    background-color:   rgb(15, 162, 173);
+    border-radius: 30px;
+}
+#A1:hover
+{
+    border: 8px solid orange;
+    background-color: orange;
+    border-radius: 30px;
+}
+#i2
+{
+    position: absolute;
+    margin-top: 20px;
+    color: white;
+}
+#i3
+{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 350px;
+    color: white;
+}
+#lien:hover
+{
+    color: orange; 
+    border-bottom: 1px solid orange;
+    padding-bottom: 8px;
+  
+}
+.produits h2
+{
+    color: orange;
+    margin-left: 60px;
+    font-size: 40px;
+    animation-duration: 3s;
+    animation-name: défiler;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+@keyframes défiler {
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+       
+    }
+}
+.produits h1
+{ 
+    width: 600px;
+   color: white;
+   font-size: 40px;
+   margin-top: 70px;
+   margin-left: 110px;
+}
+.merveilles
+{
+    display: flex;
+    justify-content: space-around;
+}
+.produits img
+{ 
+   width: 450px;
+   height: 400px;
+   cursor: pointer;
+}
+.produits img:hover
+{
+    transform: rotate(20deg);
+}
+.rayon
+{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+#rayon:hover
+{
+    color: orange;
+}
+.rayon ul
+{
+    display: flex;
+   
+}
+.rayon ul li
+{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 7px;
+}
+.rayon ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.notifs
+{
+    
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    width: 445px;
+    margin-left: 405px;
+    margin-top: 50px;
+    font-size: 22px;
+}
+#Fauteuil
+{  
+    background: url(Images/IMG-20241025-WA0302.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Fauteuil h2
+{
+   color: white;
+   margin: 30px;
+}
+.Faut
+{
+    display: flex;
+    justify-content: space-around;
+}
+.Faut img
+{
+    width: 300px;
+    height: 235px;
+}
+.Faut1
+{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 12px;
+}
+.Faut1 img:hover
+{
+    transform: scale(1.05);
+}
+.Faut2 img:hover
+{
+    transform: scale(1.05);
+}
+.Faut3 img:hover
+{
+    transform: scale(1.05);
+}
+.Faut4 img:hover
+{
+    transform: scale(1.05);
+}
+.Faut2
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+.Faut3
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+.Faut4
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+#Ach
+{
+    border: 1px solid rgb(15, 162, 173);
+    background-color: rgb(15, 162, 173);
+    padding: 9px;
+    font-size: 22px;
+    border-radius: 20px;
+    margin-left: 220px;
+    color: white;
+    cursor: pointer;
+}
+
+
+#Armoire
+{  
+    background: url(Images/IMG-20241025-WA0058.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Armoire h2
+{
+   color: white;
+   margin: 30px;
+}
+.Arm
+{
+    display: flex;
+    justify-content: space-around;
+}
+.Arm img
+{
+    width: 300px;
+    height: 235px;
+}
+.Arm1
+{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 12px;
+}
+.Arm1 img:hover
+{
+    transform: scale(1.05);
+}
+.Arm2 img:hover
+{
+    transform: scale(1.05);
+}
+.Arm3 img:hover
+{
+    transform: scale(1.05);
+}
+.Arm4 img:hover
+{
+    transform: scale(1.05);
+}
+.Arm2
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+.Arm3
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+.Arm4
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+
+#Lit
+{  
+    background: url(Images/IMG-20241025-WA0122.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Lit h2
+{
+   color: white;
+   margin: 30px;
+}
+.Lit
+{
+    display: flex;
+    justify-content: space-around;
+}
+.Lit img
+{
+    width: 300px;
+    height: 235px;
+}
+.Lit1
+{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 12px;
+}
+.Lit1 img:hover
+{
+    transform: scale(1.05);
+}
+.Lit2 img:hover
+{
+    transform: scale(1.05);
+}
+.Lit3 img:hover
+{
+    transform: scale(1.05);
+}
+.Lit4 img:hover
+{
+    transform: scale(1.05);
+}
+.Lit2
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+.Lit3
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+.Lit4
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+
+#Auther
+{  
+    background: url(Images/IMG-20241025-WA0417.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Auther h2
+{
+   color: white;
+   margin: 30px;
+}
+.Aut
+{
+    display: flex;
+    justify-content: space-around;
+}
+.Aut img
+{
+    width: 300px;
+    height: 235px;
+}
+.Aut1
+{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 12px;
+}
+.Aut1 img:hover
+{
+    transform: scale(1.05);
+}
+.Aut2 img:hover
+{
+    transform: scale(1.05);
+}
+.Aut3 img:hover
+{
+    transform: scale(1.05);
+}
+.Aut4 img:hover
+{
+    transform: scale(1.05);
+}
+.Aut2
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+.Aut3
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+.Aut4
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.bigfooter
+{
+    border: 1px solid rgb(8, 61, 48);
+    background-color: rgb(8, 61, 48);
+    padding: 20px;
+    color: white;
+}
+.bigfooter1
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.bigfooter2
+{
+      margin-left: 750px;
+      margin-top: 30px;
+}
+.copyright
+{
+    border: 1px solid #061d17;
+    background-color: #061d17;
+    text-align: center;
+    list-style: none;
+    padding: 20px;
+    color: white;
+}
+#i1
+{
+    margin-left: 7px;
+    color: black;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}

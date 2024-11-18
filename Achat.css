@@ -1,0 +1,82 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+   width: 100%;
+   background-color: black;
+}
+
+header
+{
+    background: url(rectangle28.svg), url(Images/IMG-20241025-WA0381.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+#logos
+{
+    font-size: 25px;
+}
+.head-1
+{
+    display: flex;
+    justify-content: space-around;
+}
+.M
+{
+    color: white;
+    list-style: none;
+    margin: 20px;
+}
+nav ul 
+{
+    display: flex;
+    list-style: none;
+ 
+}
+nav ul li
+{
+    margin: 20px;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+#A1
+{
+    border: 8px solid rgb(15, 162, 173);
+    background-color:   rgb(15, 162, 173);
+    border-radius: 30px;
+}
+#A1:hover
+{
+    border: 8px solid orange;
+    background-color: orange;
+    border-radius: 30px;
+}
+#i2
+{
+    position: absolute;
+    margin-top: 20px;
+    color: white;
+}
+#i3
+{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 350px;
+    color: white;
+}
+#lien:hover
+{
+    color: orange; 
+    border-bottom: 1px solid orange;
+    padding-bottom: 8px;
+  
+}

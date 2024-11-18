@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="panier.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier</title>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="head-1">
+            <div class="M">
+       <li id="logos"><span style="color: orange;">M</span>obilux<span style="color: orange;">.</li>
+        </div>
+
+<nav>
+    <ul>
+        <li><a href="Mobilux.html"  id="lien">Accueil</a></li>
+        <li><a href="Stocks.html"  id="lien">Stocks</a></li>
+       
+        <div class="Achat">
+            <i class="fa-solid fa-bag-shopping" id="i2"></i>
+             <li><a href="Achat.html"  id="lien">Achat</a></li>   
+        </div>
+        <li><a href="Propos.html"  id="lien">A propos</a></li>
+            <i class="fa-regular fa-circle-user" id="i3"></i>
+            <li><a href="Inscription.html" id="A1">Connection/Inscription</a></li>     
+    </ul>
+</nav>
+</div><br><br>
+
+        <header>
+            <h1>Vos achats</h1>
+        </header>
+
+        <div id="panier-container">
+            <!-- Contenu du panier chargé par JS -->
+        </div>
+
+        <div id="panier-actions">
+            <button id="vider-panier">Vider le panier</button>
+            <button id="valider-commande">Valider la commande</button>
+        </div>
+
+        <footer>
+            <div id="total">
+                <h3 style="color: white;">Total: <span id="total-amount" style="color: white;">0,00$</span></h3>
+            </div>
+        </footer>
+    </div>
+
+  
+    <script>
+        // Fonction pour afficher les produits du panier
+        function afficherPanier() {
+            let panier = JSON.parse(localStorage.getItem('panier')) || [];
+            let panierContainer = document.getElementById('panier-container');
+            panierContainer.innerHTML = ''; // Réinitialiser le panier
+
+            if (panier.length === 0) {
+                panierContainer.innerHTML = "<p style='text-align: center;'>Votre panier est vide.</p>";
+                document.getElementById('total-amount').textContent = "0,00$"; // Total à 0
+            } else {
+                let total = 0;
+
+                panier.forEach((produit, index) => {
+                    total += produit.prix * produit.quantite;
+
+                    panierContainer.innerHTML += `
+                        <div class="panier-item">
+                            <img src="${produit.image}" alt="${produit.nom}">
+                            <p>${produit.nom} - ${produit.prix} $</p>
+                            <input type="number" class="quantite" value="${produit.quantite}" data-index="${index}">
+                            <p class="total-item">${(produit.prix * produit.quantite).toFixed(2)} $</p>
+                            <button class="supprimer" data-index="${index}">Supprimer</button>
+                        </div>
+                    `;
+                });
+
+                // Mettre à jour le total
+                document.getElementById('total-amount').textContent = total.toFixed(2) + ' $';
+
+                // Ajouter les événements pour la suppression et la mise à jour des quantités
+                document.querySelectorAll('.supprimer').forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        let index = e.target.getAttribute('data-index');
+                        let panier = JSON.parse(localStorage.getItem('panier')) || [];
+                        panier.splice(index, 1);
+                        localStorage.setItem('panier', JSON.stringify(panier));
+                        afficherPanier();
+                    });
+                });
+
+                document.querySelectorAll('.quantite').forEach(input => {
+                    input.addEventListener('change', (e) => {
+                        let index = e.target.getAttribute('data-index');
+                        let panier = JSON.parse(localStorage.getItem('panier')) || [];
+                        panier[index].quantite = parseInt(e.target.value) || 1; // S'assurer que la quantité est valide
+                        localStorage.setItem('panier', JSON.stringify(panier));
+                        afficherPanier();
+                    });
+                });
+            }
+        }
+
+        // Fonction pour vider le panier
+        document.getElementById('vider-panier').addEventListener('click', () => {
+            localStorage.removeItem('panier');
+            afficherPanier();
+        });
+
+        // Fonction pour valider la commande (rediriger vers la page de paiement)
+        document.getElementById('valider-commande').addEventListener('click', () => {
+            let panier = JSON.parse(localStorage.getItem('panier')) || [];
+
+            if (panier.length === 0) {
+                alert("Votre panier est vide. Veuillez ajouter des produits avant de valider la commande.");
+            } else {
+                window.location.href = "paiement.html"; // Rediriger vers la page de paiement
+            }
+        });
+
+        // Initialiser la page du panier
+        afficherPanier();
+    </script>
+</body>
+</html>

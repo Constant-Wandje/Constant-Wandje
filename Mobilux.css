@@ -1,0 +1,599 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+   width: 100%;
+   background-color: black;
+}
+#logos
+{
+    font-size: 25px;
+}
+header
+{
+    background: url(rectangle46.svg), url(Images/COLLECTION\ PIANA\ 1440x810.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.head-1
+{
+    display: flex;
+    justify-content: space-around;
+}
+.M
+{
+    color: white;
+    list-style: none;
+    margin: 20px;
+}
+nav ul 
+{
+    display: flex;
+    list-style: none;
+ 
+}
+nav ul li
+{
+    margin: 20px;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+#A1
+{
+    border: 8px solid rgb(15, 162, 173);
+    background-color:   rgb(15, 162, 173);
+    border-radius: 30px;
+}
+#A1:hover
+{
+    border: 8px solid orange;
+    background-color: orange;
+    border-radius: 30px;
+}
+#i2
+{
+    position: absolute;
+    margin-top: 20px;
+    color: white;
+}
+#i3
+{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 350px;
+    color: white;
+}
+#lien:hover
+{
+    color: orange;
+    border-bottom: 1px solid orange;
+    padding-bottom: 8px;
+}
+.head-2
+{
+    text-align: center;
+}
+#A2
+{
+    border: 1px solid rgb(254, 255, 255);
+    background-color:   rgb(254, 255, 255);
+    border-radius: 8px;
+    width: 280px;
+    padding: 12px;
+    
+}
+#A3
+{
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    color: white; 
+}
+#A3:hover
+{
+    transform: scale(1.05);
+}
+#IM1
+{
+    width: 550px;
+    height: 300px;
+    border-radius: 18px;
+    margin-left: 190px;
+}
+.head-3 h2
+{
+    color: orange;
+    text-align: center;
+    font-size: 38px;
+    margin-left: 510px;
+    margin-top: -285px;
+    position: absolute;
+    
+}
+.head-3 h3
+{
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    margin-left: 818px;
+    margin-top: -312px;
+    position: absolute; 
+}
+#total
+{
+    color: white;
+}
+
+.attout
+{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    font-size: 20px;
+}
+#AT
+{
+    border: 1px solid rgb(15, 162, 173);
+    background-color: rgb(15, 162, 173);
+    color: white;
+    margin-top: -10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#AT a
+{
+    text-decoration: none;
+    color: white;
+}
+#AT:hover
+{
+    border: 1px solid orange;
+    background-color: orange;
+}
+.canap1
+{
+    display: flex;
+    justify-content: space-around;
+}
+.cap1 img
+{
+    width: 250px;
+    height: 200px;
+}
+.cap1 img:hover
+{
+    transform: scaley(1.07);
+}
+
+.cap2 img
+{
+    width: 250px;
+    height: 200px;
+}
+.cap2 img:hover
+{
+    transform: scaley(1.07);
+}
+
+
+.cap3 img
+{
+    width: 250px;
+    height: 200px;
+}
+
+.cap4 img
+{
+    width: 250px;
+    height: 200px;
+}
+
+#cap1
+{
+    border: 1px solid white;
+    background-color: white;
+    margin-top: -5px;
+    color: orange;
+    padding: 12px;
+}
+.local
+{
+    background: url(Images/COLLECTION\ PIANA\ 1440x810.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.location
+{ 
+       display: flex;
+       justify-content: space-around;
+}
+.souhaiter
+{
+    border: 1px solid white;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+   
+}
+.souhaiter h1
+{
+    animation-duration: 1.5s;
+    animation-name: défiler;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+@keyframes défiler {
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+       
+    }
+}
+.décrire
+{
+    margin-top: 50px;
+}
+.décrire h1
+{
+    color: white;
+    font-size: 45px;
+}
+
+.décrire button
+{
+    border: 1px solid blue;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 18px;
+}
+.décrire button:hover
+{   
+    border: 1px solid orange;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 18px; 
+}
+.décrire button a
+{
+    color: white;
+    text-decoration: none;
+}
+.souhaiter button
+{
+    border: 1px solid black;
+    background-color: black;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+}
+.souhaiter button:hover
+{
+    border: 1px solid orange;
+    background-color: orange;
+    color: black;
+}
+.nouveauté
+{
+    background: #252A2D;
+}
+.nouveauté h2
+{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.canap2
+{
+    display: flex;
+    justify-content: space-around;
+}
+.vendre1
+{
+    border: 1px solid rgb(221, 183, 183);
+    background-color: rgb(221, 183, 183);
+    padding: 12px;
+    width: 350px;
+}
+.vendre2
+{
+    border: 1px solid rgb(177, 194, 206);
+    background-color: rgb(177, 194, 206);
+    padding: 12px;
+    width: 350px;
+}
+#CNP
+{
+    font-size: 25px;
+}
+#VN
+{   
+    width: 250px;
+    height: 150px; 
+    margin-left: 90px;
+}
+#VN:hover
+{
+    transform: rotate(5deg);
+}
+#AV
+{
+    color: white;
+    border: 1px solid rgb(9, 153, 172);
+    background-color: rgb(9, 153, 172);
+    padding: 12px;
+    width: 86px;
+    margin-left: 202px;
+}
+
+.temoignage
+{
+    width: 100%;
+    height: 300px;
+    background: url(Imges/rectangle46.svg), url(Images/IMG-20241025-WA0395.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.temoignage .USERS
+{
+    text-align: center;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.temoignage .USERS p
+{
+    text-align: center;  
+    color: white;
+    margin-top: 10px;
+}
+
+.temoignage .USERS h2
+{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.temoignage .USERS #PO
+{
+
+    border: 4px solid rgb(15, 162, 173);
+    background-color: rgb(15, 162, 173);
+    border-radius: 100%;
+    color: white;
+    align-items: center;
+    padding: 5px;
+}
+#MP
+{
+    color: rgb(122, 114, 129);
+    font-size: 12px;
+}
+.temoin
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -91px;
+}
+.Laura
+{
+    border: 1px solid rgb(114, 106, 106);
+    background-color: white;
+    border-radius: 18px;
+    padding: 20px;
+}
+.Audey
+{
+    border: 1px solid rgb(114, 106, 106);
+    background-color: white;
+    border-radius: 18px;
+    padding: 20px;
+}
+.Fred
+{
+    border: 1px solid rgb(114, 106, 106);
+    background-color: white;
+    border-radius: 18px;
+    padding: 20px;
+}
+.Laur
+{
+    display: flex;
+    align-items: center;
+}
+.Laur img:hover
+{
+   transform: scale(1.07);
+}
+.Aude
+{
+    display: flex;
+    align-items: center;
+}
+.Aude img:hover
+{
+   transform: scale(1.07);
+}
+.Fre
+{
+    display: flex;
+    align-items: center;
+}
+.Fre img:hover
+{
+   transform: scale(1.07);
+}
+.Laur p
+{
+    margin-left: 18px;
+}
+.Aude p
+{
+    margin-left: 18px;
+}
+.Fre p
+{
+    margin-left: 18px;
+}
+#star1
+{
+   color: yellow;
+}
+#star2
+{
+    color: yellow;
+}
+#star3
+{
+    color: yellow;
+}
+.bigfooter
+{
+    border: 1px solid rgb(8, 61, 48);
+    background-color: rgb(8, 61, 48);
+    padding: 20px;
+    color: white;
+}
+.bigfooter1
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.bigfooter2
+{
+      margin-left: 750px;
+      margin-top: 30px;
+}
+.copyright
+{
+    border: 1px solid #061d17;
+    background-color: #061d17;
+    text-align: center;
+    list-style: none;
+    padding: 20px;
+    color: white;
+}
+#i1
+{
+    margin-left: 7px;
+    color: black;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE STYLES */
+
+/* Pour les petits écrans (mobiles) */
+@media (max-width: 767px) {
+    .head-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .canap1, .canap2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-3 h2,
+    .head-3 h3 {
+        font-size: 28px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .attout {
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .souhaiter, .décrire {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .vendre1, .vendre2 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .bigfooter1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bigfooter1 ul {
+        padding-left: 0;
+    }
+
+    .bigfooter1 li {
+        font-size: 16px;
+    }
+
+    .smallfooter p {
+        font-size: 14px;
+    }
+}
+
+/* Pour les écrans moyens (tablettes) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .head-1 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .canap1, .canap2 {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .attout {
+        flex-direction: row;
+        font-size: 20px;
+    }
+
+    .souhaiter, .décrire {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .bigfooter1 {
+        flex-direction: row;
+    }
+}
+
